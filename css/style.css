@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+body, html {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.navbar {
+    background-color: #00747C;
+    color: #CACACA;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.7em;
+    justify-content: space-between;
+    margin-right: 950px;
+    color: white;
+    font-weight: 400;
+    padding: 9px 0px;
+    margin-left: 20px;
+}
+
+.nav-links-desktop {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+}
+
+.nav-links-desktop li {
+    padding: 0 15px;
+}
+
+.nav-links-desktop a {
+    color: white;
+    font-size: 1.2em;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.nav-links-desktop a:hover {
+    color: #506266;
+}
+
+.logo:hover {
+    transform: rotate(-5deg);
+    transform: scale(1.1, 1.1);
+    transition: .7s;
+}
+
+.mobile-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 60%;
+    height: 100%;
+    background-color: #CACACA;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.8rem;
+}
+
+.nav-links-mobile {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1.2rem;
+    width: 80%;
+    list-style: none;
+    padding: 0px;
+}
+
+.nav-links-mobile li {
+    border-bottom: 1px solid gray;
+    padding-bottom: 1.2rem;
+}
+
+.nav-links-mobile a {
+    color: #506266;
+    text-decoration: none;
+}
+
+.hamburger,
+.close {
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    display: none;  
+}
+
+.close {
+    margin-right: 20px;
+    margin-top: 20px;
+    display: block;
+    align-self: end;
+}
+
+.flex {
+    display: flex;
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 12px;
+    }
+
+    .nav-links-desktop {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
