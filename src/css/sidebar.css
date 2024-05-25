@@ -20,14 +20,15 @@
 body {
     display: flex;
     min-height: 100vh;
+    min-width: 100vw;
 }
 
 main {
+    width: 100vw;
+    display: flex;
     z-index: 1;
-    padding-left: calc(82px + 20px);
 }
 
-/* */
 
 #sidebar {
     display: flex;
@@ -109,6 +110,7 @@ main {
     font-size: 14px;
     display: flex;
     gap: 20px;
+    justify-content: center;
     align-items: center;
     border-radius: 8px;
     text-align: start;
