@@ -1,12 +1,5 @@
-const hamburgerButton = document.getElementById('hamburgerButton');
-const close = document.getElementById('closeButton');
+const openBtn = document.getElementById('open_btn');
 
-const mobileMenu = document.getElementById('mobileMenu');
-
-hamburgerButton.addEventListener("click", function() {
-    mobileMenu.classList.add("flex");
-})
-
-closeButton.addEventListener("click", function() {
-    mobileMenu.classList.remove("flex");
+openBtn.addEventListener("click", function() {
+    mobileMenu.classList.add("open-navbar");
 })
