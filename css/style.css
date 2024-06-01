@@ -44,7 +44,7 @@ body {
 
 @media (min-width: 320px) and (max-width: 380px) {
     #navbar {
-        background-color: red;
+        background-color: blue;
     }
     
     #nav-items {
