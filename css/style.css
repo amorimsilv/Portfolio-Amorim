@@ -13,3 +13,16 @@ body {
     min-height: 100vh;
     font-family: 'Poppins', sans-serif;
 }
+
+#navbar {
+    background-color: gray;
+    min-width: 100vw;
+    height: 70px;
+    
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    #navbar {
+        background-color: red;
+    }
+}
